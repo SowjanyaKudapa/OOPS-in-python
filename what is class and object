@@ -19,3 +19,26 @@ Object:
 it is an entity that has a state and behaviour
 creating object:
 obj1=classname()
+
+why __init__:
+>>it is automatically executed when class is created.
+
+Example for class and object:
+class bankaccount:
+  def __init__(self,acc_num,acc_name,ifse_code,bal):
+    self.acc_num=acc_num
+    self.acc_name=acc_name
+    self.ifse_code=ifse_code
+    self.bal=bal
+  def withdraw(self,amount):
+    self.bal-=amount
+  def deposit(self,amount):
+    self.bal+=amount
+  def chackbalanace():
+    print(self.bal)
+obj1=bankaccount(12345,'viart','MPt123',100000)
+obj1.bal()
+obj1.deposit(5000)
+obj1.bal()
+obj1.withdraw(2000)
+obj1.bal()
