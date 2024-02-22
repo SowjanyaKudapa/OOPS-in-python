@@ -1,1 +1,21 @@
-
+# OOPS: It is a programming paradigm. It aims to implement real world entities.
+class
+objects
+polymorphism
+encapsulation
+Inheritance
+data abstraction
+why oops?
+>> allows parallel programming and data security
+class:
+class is a blue print for objects. It is Collection of objects
+Any number of objects can get the methods and variables of class.
+Creating class name:
+>> class classname:
+Accessing methods and attributes:
+>> classname.attributes
+>>classname.methods
+Object:
+it is an entity that has a state and behaviour
+creating object:
+obj1=classname()
