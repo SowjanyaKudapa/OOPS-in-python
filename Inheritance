@@ -1,0 +1,111 @@
+Inheritance:
+>> Ability to use methods and atributes in newly created class from already exixting class.
+Types:
+  single inheritance
+  multiple inheritance
+  multilevel inheritance
+  hierarchial inheritance
+  hybrid inheritance
+Single Inheritance:
+>> A child class is created from one parent class.
+    parent class
+    child class
+ex:
+===
+def parentclass:
+  def method1(self):
+    print("parent class")
+def child:
+  def method2(self):
+    print("child class")
+child1=child()
+child1.method2()
+child1.method1()
+
+Multiple Inheritance:
+>> A child is derived from more than one class
+ parentclass         parentclass
+          child class
+ex:
+===
+def parentclass1:
+  def method1(self):
+    print("parentclass1")
+def parentclass2:
+  def method2(self):
+    print("parentclass2")
+def child(parentclass1, parentclass2):
+  def method2(self):
+    print("child class")
+child1=child()
+child1.method3()
+child1.method2()
+child1.method1()
+
+Multi Level Inheritance:
+>> A class is derived from another class and that class is derived from another class.
+  grand parent class 
+  parent class
+  child class
+ex:
+====
+def parentclass1:
+  def method1(self):
+    print("parentclass1")
+def parentclass2(parentclass1):
+  def method2(self):
+    print("parentclass2")
+def child(parentclass2):
+  def method2(self):
+    print("child class")
+child1=child()
+child1.method3()
+child1.method2()
+child1.method1()
+Hierarchial Inheritance:
+>> more than one class is derived from single class 
+        parent class
+childclass        childclass
+ex
+====
+def parent:
+  def method1(self):
+    print("Iam parent")
+def child1(parent):
+  def method2(self):
+    print("iam first children")
+def child2(parent):
+  def method2(self):
+    print("iam second children")
+child1=child1()
+child1.mathod2()
+child1.method1()
+child2=child2()
+child2.mathod2()
+child2.method1()
+
+Hybrid Inheritance:
+>> more than one type of inheritance
+          grandparent
+    parent1      parent2
+          childclass
+ex
+===
+def grandparent:
+  def method1(self):
+    print("iam grand parent")
+def parent1(grandparent):
+  def method2(self):
+    print("iam parent1")
+def parent2:
+  def method3self):
+    print("iam parent2")
+def child(parent1,parent2):
+  def method3(self):
+    print("iam child")
+child1=child()
+child1.method4()
+child1.method3()
+child1.method2()
+child1.method1()
+  
