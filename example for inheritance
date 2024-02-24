@@ -1,0 +1,35 @@
+//Inheritance
+class Member:
+  def __init__(self,firstname,lastname,email,memberid,address,mobilenum,datejoined):
+    self.firstname=firstname
+    self.lastname=lastname
+    self.email=email
+    self.memberid=memberid
+    self.address=address
+    self.mobilenum=mobilenum
+    self.datajpoined=datejoined
+
+  def getFullName(self):
+    print(self.firstname+" "+self.lastname)
+  def changeaddress(self,newaddress):
+    self.address=new_address
+    print("Adress changed successfully")
+  def chnageNumber(self,newnum):
+    self.mobilenum=newnum
+    print("Mobile num changed successfully")
+
+class Faculty(Member):
+  def __init__(self,firstname,lastname,email,memberid,address,mobilenum,subjectsteaching,salary,datajoined):
+    self.subjectsTeacheing=subjectteaching
+    self.salary=salary
+    Member__init__(self,firstname,lastname,email,memberid,address,mobilenum,datejoined)
+
+  def getsalary(self):
+    print(self.salary")
+class Student(Member):
+  def __init__(self,firstname,lastname,email,memberid,address,mobilenum,sC,GPA,datajoined):
+    self.subjectslearned=subjectslearned
+    self.GPA=GPA
+    Member__init__(self,firstname,lastname,email,memberid,address,mobilenum,datejoined)
+  def getGPA(self):
+    print(self.GPA")
