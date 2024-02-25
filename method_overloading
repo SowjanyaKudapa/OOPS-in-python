@@ -1,0 +1,49 @@
+Method Overloading : If a class has more than one method with same name or same name with diff parameters or same name with diff datatypes or both is called method overloading
+it is flexibilty, readability.
+python doesn't support the method overloading bcz it is dynamically typed language , if u want to use method overloading in your python we use to import multipledispatch module , by default this module is not there in the python we should install.
+for installing "pip install multipledispatch"
+after that we can import in our code.
+
+EX:
+//error code
+class A:
+  def add(self,a,b):
+    return a+b
+  def add(self,a,b,c):
+    return a+b+c
+obj = A()
+print(obj.add(1,2,3)) -> it executes bcz python supports last instialized method in method overloading
+print(obj.add(1,2)) -> it gives error here.
+
+//correct code
+import multipledispatch
+class A:
+  @multipledispatch.dispatch(int,int)
+  def add(self,a,b):
+    return a+b
+  @multipledispatch.dispatch(int,int,int)
+  def add(self,a,b,c):
+    return a+b+c
+  @multipledispatch.dispatch(str,str)
+  def add(self,a,b):
+    return a+b
+obj=A()
+print(obj.add(1,2))
+print(obj.add('king','kohli')
+
+//easy code
+class A:
+  def add(self *args):
+    if args:
+      sum=type(args[0])()
+      for i in args:
+        sum+=i
+      return sum
+obj=A()
+print(obj.add(1,2))
+print(obj.add(1,2,3))
+print(obj.add('king','kohli')
+print(abj.add(1.2,3,4.2,8))
+
+
+
